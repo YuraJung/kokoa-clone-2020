@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title></title>
+        <style>
+            body {
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+           @keyframes gitCat {
+               from {
+                    transform: rotateY(0);
+               }
+               to {
+                    transform: rotateY(360deg);
+               }
+           }
+
+           img {
+               width: 100px;
+               animation: gitCat 5s infinite;
+           }
+
+           div {
+               background-color: teal;
+               width: 200px;
+               height: 200px;
+           }
+
+           @media screen and (min-Width:600px)and (orientation:portrait) {
+               div {
+                    background-color: tomato;
+               }
+           }
+
+           span {
+               font-size: 25px;
+           }
+
+           @media screen and (orientation:landscape) {
+               span {
+                   display: none;
+               }
+           }
+
+        </style>
+    </head>
+    <body>
+        <img src="image/git_cat.png">
+        <div></div>
+        <span>Please flip your phone :(</span>
+    </body>
+</html>
