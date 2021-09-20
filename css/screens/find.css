@@ -8,14 +8,14 @@
 
 .recommended-friends__title {
     font-size: 14px;
-    color: var(--gray-title);
+    color: white;
 }
 
 .recommended-friends span {
     display: block;
     margin: 100px 0px;
     text-align: center;
-    color: var(--gray-title);
+    color: white;
 }
 
 .open-chat__header {
@@ -25,11 +25,11 @@
 }
 
 .open-chat__header h4 {
-    color: var(--gray-title);
+    color: white;
 }
 
 .open-chat__header span {
-    color: rgba(0, 0, 0, 0.3);
+    color: white;
 }
 
 .open-post {
@@ -45,7 +45,7 @@
 
 .open-post__hashtags {
     text-transform: uppercase;
-    color: var(--gray-title);
+    color: white;
 }
 
 .open-post__members {
@@ -63,7 +63,7 @@
 }
 
 .open-post__member-count {
-    color: var(--gray-title);
+    color: white;
 }
 
 .open-post__members .divider {

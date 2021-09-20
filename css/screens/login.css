@@ -1,10 +1,25 @@
+@keyframes fadeIn {
+    0%{
+        opacity:0;
+        transform: none;
+        }
+        1%{
+        opacity: 0;
+        transform: translateY(-10px);
+        }
+        100%{
+        opacity:1;
+        transform: none;
+        }
+}
+
 .welcome-header {
     margin: 90px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
+    animation: fadeIn 0.8s linear;
 }
 
 .welcome-header__title {
@@ -19,14 +34,25 @@
     
 }
 
+@keyframes leftIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 #login-form {
     display: flex;
     flex-direction: column;
     margin: 0px 21px;
+    animation: leftIn 0.8s linear;
 }
 
 #login-form input {
-    padding: 20px 0px;
+    padding: 20px 10px;
     border: none;
     font-size: 16px;
     margin-bottom: 25px;
